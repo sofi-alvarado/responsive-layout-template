@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: gainsboro;
 }
 
 .container {
+  background-color: red;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -16,9 +20,16 @@ body {
 .link-item, 
 footer {
   background-color: white;
-  border: solid 0.2rem #000000;
+  border: solid 0.1rem #000000;
   margin: 0.2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .logo {
