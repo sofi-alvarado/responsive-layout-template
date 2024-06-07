@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
-    <title>Responsiveness Example</title>
-  </head>
-  <body>
-    <section class="container">
-        <div class="logo">
-          <p>Logo</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Tailwind CSS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body class="m-0 font-roboto font-normal bg-gray-200 min-h-screen flex flex-col">
+  <section class="flex flex-col flex-1">
+    <div class="flex items-center justify-center h-[5vw] md:h-[10vw] bg-white border border-black m-1">
+      <p>Logo</p>
+    </div>
+    <div class="flex items-center justify-center h-[10vw] bg-white border border-black m-1">
+      <p>Header</p>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between flex-wrap md:flex-nowrap">
+      <div class="flex items-center justify-center flex-1 bg-white border border-black m-1 p-3">
+        <p>Navigation</p>
+      </div>
+      <div class="flex items-center justify-center flex-1 bg-white border border-black m-1 p-3">
+        <p>Navigation</p>
+      </div>
+      <div class="flex items-center justify-center flex-1 bg-white border border-black m-1 p-3">
+        <p>Navigation</p>
+      </div>
+      <div class="flex items-center justify-center flex-1 bg-white border border-black m-1 p-3">
+        <p>Navigation</p>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row flex-wrap md:flex-nowrap md:h-[20vw]">
+      <div class="flex flex-col w-full md:flex-1">
+        <div class="flex items-center justify-center flex-1 bg-white border border-black m-1">
+          <p>About</p>
         </div>
-        <div class="header">
-          <p>Header</p>
+      </div>
+      <div class="flex flex-col w-full md:flex-1">
+        <div class="flex items-center justify-center flex-1 bg-white border border-black m-1">
+          <p>Quick Links</p>
         </div>
-        <div class="navigation">
-          <div class="nav-item"><p>Navigation</p></div>
-          <div class="nav-item"><p>Navigation</p></div>
-          <div class="nav-item"><p>Navigation</p></div>
-          <div class="nav-item"><p>Navigation</p></div>
+        <div class="flex items-center justify-center flex-1 bg-white border border-black m-1">
+          <p>Quick Links</p>
         </div>
-        <div class="main-content">
-          <div class="about">
-           <div class="about-content"><p>About</p></div>
-          </div>
-          <div class="quick-links">
-            <div class="link-item"><p>Quick Links</p></div>
-            <div class="link-item"><p>Quick Links</p></div>
-          </div>
-        </div>
-        <footer class="footer">
-          <p>Footer</p>
-        </footer> 
-      </section>
-  </body>
+      </div>
+    </div>
+  </section>
+  <footer class="flex items-center justify-center h-[10vw] md:h-[30vw] bg-white border border-black m-1">
+    <p>Footer</p>
+  </footer>
+</body>
 </html>
